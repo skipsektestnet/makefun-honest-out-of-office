@@ -8,7 +8,12 @@ lets it stand. The punch lands at the end: "slowest first".
 import os
 
 # The entry itself: one line, honesty up front, politeness at the close.
-ENTRY = "I'm out until Monday and won't check email. Your message joins 214 unread emails I'll answer in order of dread, slowest first. Thank you for understanding."
+PARTS = [
+    "I'm out until Monday and won't check email. ",
+    "Your message joins 214 unread emails I'll answer in order of dread, ",
+    "slowest first. Thank you for understanding.",
+]
+ENTRY = "".join(PARTS)
 
 OUTPUT_PATH = "/output/entry.txt"
 
